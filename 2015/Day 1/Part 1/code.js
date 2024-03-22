@@ -12,5 +12,5 @@ for (const char of chars) {
     floor --;
   }
 }
-// print the answer
+// Print the answer
 console.log(floor);
