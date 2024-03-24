@@ -3,7 +3,6 @@ const lines = fs.readFileSync("./2015/Day 2/input.txt").toString().split("\n");
 let total = 0;
 for (const line of lines) {
   const [l, w, h] = line.split("x");
-  // make these ints
   total += Math.min((2 * (parseInt(l) + parseInt(w))), (2 * (parseInt(l) + parseInt(h))), (2 * (parseInt(h) + parseInt(w)))) + (l * w * h);
 }
 console.log(total);
